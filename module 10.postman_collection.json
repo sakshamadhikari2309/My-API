@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "db34fe71-5f7a-4c54-86d1-ad5628259b95",
+		"name": "module 10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "error handling",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

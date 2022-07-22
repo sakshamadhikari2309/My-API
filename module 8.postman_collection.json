@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "dc6f1011-58b3-4105-bac6-28cdba44936b",
+		"name": "module 8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "american",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

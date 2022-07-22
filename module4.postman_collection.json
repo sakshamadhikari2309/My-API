@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "9c9d4b19-5112-4ed0-9ced-e7a73576a7f2",
+		"name": "module4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "flight",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9a496ded9f7c4157b4e7a13f06dcd159",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "client_secret",
+						"value": "19DfC36e2476485DbE9aF1Fa2aB059dD",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8081/api/flights",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{ID}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9a496ded9f7c4157b4e7a13f06dcd159",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "client_secret",
+						"value": "19DfC36e2476485DbE9aF1Fa2aB059dD",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ID\": 66,\r\n        \"code\": \"2000ffee\",\r\n        \"price\": 300,\r\n        \"departureDate\": \"2016-02-20T00:00:00\",\r\n        \"origin\": \"MUA\",\r\n        \"destination\": \"SFO\",\r\n        \"emptySeats\": 30,\r\n        \"plane\": {\r\n            \"type\": \"Boeing 737\",\r\n            \"totalSeats\": 150\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/flights/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flights",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9a496ded9f7c4157b4e7a13f06dcd159",
+						"type": "default"
+					},
+					{
+						"key": "client_secret",
+						"value": "19DfC36e2476485DbE9aF1Fa2aB059dD",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/flights/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9a496ded9f7c4157b4e7a13f06dcd159",
+						"type": "default"
+					},
+					{
+						"key": "client_secret",
+						"value": "19DfC36e2476485DbE9aF1Fa2aB059dD",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ID\": 3,\r\n        \"code\": \"ER38sd\",\r\n        \"price\": 400,\r\n        \"departureDate\": \"2017/07/26\",\r\n        \"origin\": \"CLE\",\r\n        \"destination\": \"SFO\",\r\n        \"emptySeats\": 0,\r\n        \"plane\": {\r\n            \"type\": \"Boeing 737\",\r\n            \"totalSeats\": 150\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/flights/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"flights",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

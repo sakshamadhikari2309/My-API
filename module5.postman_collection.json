@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "093a1d70-40e6-4ef8-90a9-d9d53beb5ddd",
+		"name": "module5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prox",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "b24c1b6c963e4e8992b8fa1e1e580429",
+						"type": "default"
+					},
+					{
+						"key": "client_secret",
+						"value": "Ea267381a13947d39046c3A1E716bCfc",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://new-flight-proxy.us-e2.cloudhub.io/flights",
+					"protocol": "http",
+					"host": [
+						"new-flight-proxy",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "proxxx",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "b24c1b6c963e4e8992b8fa1e1e580429",
+						"type": "default"
+					},
+					{
+						"key": "client_secret",
+						"value": "Ea267381a13947d39046c3A1E716bCfc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ID\": 3,\r\n        \"code\": \"ER38sd\",\r\n        \"price\": 400,\r\n        \"departureDate\": \"2017/07/26\",\r\n        \"origin\": \"CLE\",\r\n        \"destination\": \"SFO\",\r\n        \"emptySeats\": 0,\r\n        \"plane\": {\r\n            \"type\": \"Boeing 737\",\r\n            \"totalSeats\": 150\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://new-flight-proxy.us-e2.cloudhub.io/flights",
+					"protocol": "http",
+					"host": [
+						"new-flight-proxy",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"flights"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
